@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Experience - BookEasy</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="icon" type="image/png" href="favicon.png.png">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo"><a href="../index.html" style="text-decoration: none; color: inherit;">BookEasy</a></div>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="#" class="check-booking-btn">Check My Bookings</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="booking-container">
+        <div class="booking-wrapper">
+            <!-- Left Side - Info Panel -->
+            <div class="booking-info-panel">
+                <div class="secure-badge">
+                    <span class="lock-icon">🔒</span>
+                    <span>Secure Booking</span>
+                </div>
+                <h1>Book Your Perfect Experience</h1>
+                <p class="subtitle">Reserve your spot at top-rated restaurants, spas, gyms, and salons</p>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <div>
+                            <h3>Instant Confirmation</h3>
+                            <p>Get booking confirmation immediately via email</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <div>
+                            <h3>Secure Payment</h3>
+                            <p>Your information is encrypted and secure</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <div>
+                            <h3>Easy Management</h3>
+                            <p>View and manage all your bookings in one place</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <div>
+                            <h3>24/7 Support</h3>
+                            <p>Our team is here to help anytime you need</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trust-badges">
+                    <div class="trust-badge">🛡️ SSL Secured</div>
+                    <div class="trust-badge">⭐ 50K+ Bookings</div>
+                    <div class="trust-badge">💯 100% Safe</div>
+                </div>
+            </div>
+
+            <!-- Right Side - Booking Form -->
+            <div class="booking-form-panel">
+                <div class="form-header">
+                    <h2>Complete Your Booking</h2>
+                    <p>Fill in the details below to reserve your experience</p>
+                </div>
+
+                <form id="bookingForm" class="booking-form">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3 class="section-title">👤 Personal Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="customerName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="customerName" name="customerName" required 
+                                   placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customerEmail">Email Address <span class="required">*</span></label>
+                                <input type="email" id="customerEmail" name="customerEmail" required 
+                                       placeholder="your.email@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customerPhone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="customerPhone" name="customerPhone" required 
+                                       placeholder="+1 (555) 123-4567">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Selection -->
+                    <div class="form-section">
+                        <h3 class="section-title">🎯 Service Selection</h3>
+                        
+                        <div class="form-group">
+                            <label for="serviceType">Service Type <span class="required">*</span></label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Select a service</option>
+                                <option value="restaurant">🍽️ Restaurant</option>
+                                <option value="spa">✨ Spa</option>
+                                <option value="gym">🏋️ Gym</option>
+                                <option value="salon">✂️ Salon</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="businessName">Business Name <span class="required">*</span></label>
+                            <select id="businessName" name="businessName" required>
+                                <option value="">First select a service type</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceDetails">Service Details</label>
+                            <input type="text" id="serviceDetails" name="serviceDetails" 
+                                   placeholder="e.g., Deep tissue massage, Haircut & styling">
+                        </div>
+                    </div>
+
+                    <!-- Booking Details -->
+                    <div class="form-section">
+                        <h3 class="section-title">📅 Booking Details</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bookingDate">Date <span class="required">*</span></label>
+                                <input type="date" id="bookingDate" name="bookingDate" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bookingTime">Time <span class="required">*</span></label>
+                                <input type="time" id="bookingTime" name="bookingTime" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="numberOfGuests">Number of Guests <span class="required">*</span></label>
+                            <input type="number" id="numberOfGuests" name="numberOfGuests" 
+                                   min="1" max="20" value="1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialRequests">Special Requests</label>
+                            <textarea id="specialRequests" name="specialRequests" rows="4" 
+                                      placeholder="Any special requirements or preferences..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Submit -->
+                    <div class="form-section">
+                        <div class="terms-checkbox">
+                            <input type="checkbox" id="acceptTerms" required>
+                            <label for="acceptTerms">
+                                I agree to the <a href="#" class="link">Terms & Conditions</a> and 
+                                <a href="#" class="link">Privacy Policy</a> <span class="required">*</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text">Confirm Booking</span>
+                            <span class="btn-loader" style="display: none;">Processing...</span>
+                        </button>
+
+                        <p class="form-note">
+                            <span class="lock-icon-small">🔒</span> 
+                            Your information is encrypted and secure
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">✓</div>
+            <h2>Booking Confirmed!</h2>
+            <p>Your booking has been successfully confirmed.</p>
+            <div class="booking-reference">
+                <strong>Booking Reference:</strong>
+                <span id="bookingRef" class="ref-code"></span>
+            </div>
+            <p class="modal-note">A confirmation email has been sent to your email address.</p>
+            <div class="modal-actions">
+                <button onclick="window.location.href='../index.html'" class="btn-primary">Back to Home</button>
+                <button onclick="closeModal()" class="btn-secondary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Check Bookings Modal -->
+    <div id="checkBookingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCheckBookingsModal()">&times;</span>
+            <h2>Check Your Bookings</h2>
+            <p>Enter your email to view all your bookings</p>
+            <form id="checkBookingsForm">
+                <div class="form-group">
+                    <input type="email" id="checkEmail" placeholder="Enter your email address" required>
+                </div>
+                <button type="submit" class="submit-btn">View My Bookings</button>
+            </form>
+            <div id="bookingsList" class="bookings-list"></div>
+        </div>
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+</html>
