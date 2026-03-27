@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyms - BookEasy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="icon" type="image/png" href="favicon.png.png">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo"><a href="../index.html" style="text-decoration: none; color: inherit;">BookEasy</a></div>
+            <nav class="main-nav">
+                <a href="../index.html">Home</a>
+                <a href="restaurants.html">Restaurants</a>
+                <a href="spas.html">Spas</a>
+                <a href="gyms.html" class="active">Gyms</a>
+                <a href="salons.html">Salons</a>
+            </nav>
+            <button class="business-login"><a href="../business-login.html">🔒 Business Login</a></button>
+        </div>
+    </header>
+
+    <section class="service-hero gym-hero">
+        <div class="hero-overlay">
+            <div class="service-icon-large">🏋️</div>
+            <h1>Transform Your Fitness Journey</h1>
+            <p>Book sessions at top-rated gyms and fitness centers</p>
+        </div>
+    </section>
+
+    <main class="service-container">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Gyms & Fitness Centers</h2>
+                <p>Find your perfect workout space and start your fitness transformation</p>
+            </div>
+
+            <div class="businesses-grid">
+                <!-- Gym 1 -->
+                <div class="business-item" onclick="bookNow('gym', 'PowerFit Gym')">
+                    <div class="business-img gym-1"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>PowerFit Gym</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.6</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Sports Complex, Athletic Drive</p>
+                        <p class="description">State-of-the-art equipment, personal training, and group classes. Perfect for serious athletes and beginners alike.</p>
+                        <div class="features">
+                            <span class="feature-tag">💪 Personal Training</span>
+                            <span class="feature-tag">🤸 Group Classes</span>
+                            <span class="feature-tag">🏃 Cardio Zone</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$ - Moderate</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gym 2 -->
+                <div class="business-item" onclick="bookNow('gym', 'Elite Fitness Center')">
+                    <div class="business-img gym-2"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Elite Fitness Center</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.8</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Athletic District, Champion Way</p>
+                        <p class="description">Premium fitness facility with Olympic-grade equipment, swimming pool, and spa services.</p>
+                        <div class="features">
+                            <span class="feature-tag">🏊 Swimming Pool</span>
+                            <span class="feature-tag">🏋️ Weight Training</span>
+                            <span class="feature-tag">🧖 Sauna & Steam</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$$ - Premium</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gym 3 -->
+                <div class="business-item" onclick="bookNow('gym', 'Iron Paradise')">
+                    <div class="business-img gym-3"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Iron Paradise</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.9</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Muscle Beach, Power Street</p>
+                        <p class="description">Hardcore bodybuilding gym with heavy-duty equipment, powerlifting area, and expert coaching.</p>
+                        <div class="features">
+                            <span class="feature-tag">🏋️‍♂️ Powerlifting</span>
+                            <span class="feature-tag">💪 Bodybuilding</span>
+                            <span class="feature-tag">👨‍🏫 Expert Coaches</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$ - Moderate</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gym 4 -->
+                <div class="business-item" onclick="bookNow('gym', 'Yoga & Fitness Studio')">
+                    <div class="business-img gym-4"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Yoga & Fitness Studio</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.9</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Harmony Plaza, Zen Avenue</p>
+                        <p class="description">Holistic fitness center specializing in yoga, pilates, and mindful movement practices.</p>
+                        <div class="features">
+                            <span class="feature-tag">🧘 Yoga Classes</span>
+                            <span class="feature-tag">🤸 Pilates</span>
+                            <span class="feature-tag">🌅 Meditation</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$ - Moderate</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gym 5 -->
+                <div class="business-item" onclick="bookNow('gym', 'CrossFit Arena')">
+                    <div class="business-img gym-5"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>CrossFit Arena</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.8</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Champion Way, Fitness Boulevard</p>
+                        <p class="description">High-intensity CrossFit training with certified coaches and supportive community atmosphere.</p>
+                        <div class="features">
+                            <span class="feature-tag">🏃 HIIT Training</span>
+                            <span class="feature-tag">🤾 CrossFit</span>
+                            <span class="feature-tag">👥 Community</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$$ - Premium</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gym 6 -->
+                <div class="business-item" onclick="bookNow('gym', '24/7 Fitness Hub')">
+                    <div class="business-img gym-6"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>24/7 Fitness Hub</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.5</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Downtown, Main Street</p>
+                        <p class="description">Always open fitness center with flexible membership options. Perfect for busy schedules.</p>
+                        <div class="features">
+                            <span class="feature-tag">⏰ 24/7 Access</span>
+                            <span class="feature-tag">🚿 Locker Rooms</span>
+                            <span class="feature-tag">📱 Mobile App</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$ - Budget Friendly</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 BookEasy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function bookNow(serviceType, businessName) {
+            window.location.href = `booking.html?service=${serviceType}&business=${encodeURIComponent(businessName)}`;
+        }
+    </script>
+</body>
+</html>

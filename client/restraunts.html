@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - BookEasy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="icon" type="image/png" href="favicon.png.png">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo"><a href="../index.html" style="text-decoration: none; color: inherit;">BookEasy</a></div>
+            <nav class="main-nav">
+                <a href="../index.html">Home</a>
+                <a href="restaurants.html" class="active">Restaurants</a>
+                <a href="spas.html">Spas</a>
+                <a href="gyms.html">Gyms</a>
+                <a href="salons.html">Salons</a>
+            </nav>
+            <button class="business-login"><a href="../business-login.html">🔒 Business Login</a></button>
+        </div>
+    </header>
+
+    <section class="service-hero restaurant-hero">
+        <div class="hero-overlay">
+            <div class="service-icon-large">🍽️</div>
+            <h1>Find Your Perfect Dining Experience</h1>
+            <p>Book tables at the finest restaurants in town</p>
+        </div>
+    </section>
+
+    <main class="service-container">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Restaurants</h2>
+                <p>Discover and reserve your table at top-rated restaurants</p>
+            </div>
+
+            <div class="businesses-grid">
+                <!-- Restaurant 1 -->
+                <div class="business-item" onclick="bookNow('restaurant', 'The Gourmet Kitchen')">
+                    <div class="business-img restaurant-1"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>The Gourmet Kitchen</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.8</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Downtown Plaza, 123 Main Street</p>
+                        <p class="description">Experience fine dining at its best with our chef's special menu featuring international cuisine and local delicacies.</p>
+                        <div class="features">
+                            <span class="feature-tag">🍷 Wine Bar</span>
+                            <span class="feature-tag">🎵 Live Music</span>
+                            <span class="feature-tag">🌟 Fine Dining</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$$ - Upscale</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant 2 -->
+                <div class="business-item" onclick="bookNow('restaurant', 'Ocean View Bistro')">
+                    <div class="business-img restaurant-2"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Ocean View Bistro</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.9</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Waterfront District, Ocean Drive</p>
+                        <p class="description">Fresh seafood and stunning ocean views. Perfect for romantic dinners and special celebrations.</p>
+                        <div class="features">
+                            <span class="feature-tag">🦞 Seafood</span>
+                            <span class="feature-tag">🌊 Ocean View</span>
+                            <span class="feature-tag">💑 Romantic</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$$ - Upscale</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant 3 -->
+                <div class="business-item" onclick="bookNow('restaurant', 'Mountain Peak Restaurant')">
+                    <div class="business-img restaurant-3"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Mountain Peak Restaurant</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.7</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Highland Center, Mountain Road</p>
+                        <p class="description">Enjoy authentic mountain cuisine with breathtaking views. Family-friendly atmosphere.</p>
+                        <div class="features">
+                            <span class="feature-tag">🏔️ Mountain View</span>
+                            <span class="feature-tag">👨‍👩‍👧‍👦 Family Friendly</span>
+                            <span class="feature-tag">🥘 Traditional</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$ - Moderate</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant 4 -->
+                <div class="business-item" onclick="bookNow('restaurant', 'Urban Eatery')">
+                    <div class="business-img restaurant-4"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Urban Eatery</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.6</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 City Square, Urban Plaza</p>
+                        <p class="description">Modern fusion cuisine in a trendy urban setting. Perfect for lunch and casual dining.</p>
+                        <div class="features">
+                            <span class="feature-tag">🍔 Fusion</span>
+                            <span class="feature-tag">☕ Brunch</span>
+                            <span class="feature-tag">🎨 Modern</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$ - Moderate</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant 5 -->
+                <div class="business-item" onclick="bookNow('restaurant', 'Garden Terrace')">
+                    <div class="business-img restaurant-5"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Garden Terrace</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.9</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Park Avenue, Green Gardens</p>
+                        <p class="description">Organic farm-to-table dining in a beautiful garden setting. Vegan and vegetarian options available.</p>
+                        <div class="features">
+                            <span class="feature-tag">🥗 Organic</span>
+                            <span class="feature-tag">🌿 Garden Dining</span>
+                            <span class="feature-tag">🌱 Vegan Options</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$$ - Upscale</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant 6 -->
+                <div class="business-item" onclick="bookNow('restaurant', 'Spice Route')">
+                    <div class="business-img restaurant-6"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Spice Route</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.7</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Asian Quarter, Spice Street</p>
+                        <p class="description">Authentic Asian cuisine with bold flavors. Specializing in Thai, Indian, and Chinese dishes.</p>
+                        <div class="features">
+                            <span class="feature-tag">🌶️ Spicy</span>
+                            <span class="feature-tag">🥡 Asian</span>
+                            <span class="feature-tag">🍜 Noodles</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$ - Moderate</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 BookEasy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function bookNow(serviceType, businessName) {
+            window.location.href = `booking.html?service=${serviceType}&business=${encodeURIComponent(businessName)}`;
+        }
+    </script>
+</body>
+</html>
