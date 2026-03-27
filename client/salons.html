@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salons - BookEasy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="icon" type="image/png" href="favicon.png.png">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo"><a href="../index.html" style="text-decoration: none; color: inherit;">BookEasy</a></div>
+            <nav class="main-nav">
+                <a href="../index.html">Home</a>
+                <a href="restaurants.html">Restaurants</a>
+                <a href="spas.html">Spas</a>
+                <a href="gyms.html">Gyms</a>
+                <a href="salons.html" class="active">Salons</a>
+            </nav>
+            <button class="business-login"><a href="../business-login.html">🔒 Business Login</a></button>
+        </div>
+    </header>
+
+    <section class="service-hero salon-hero">
+        <div class="hero-overlay">
+            <div class="service-icon-large">✂️</div>
+            <h1>Style & Beauty Redefined</h1>
+            <p>Book appointments at premium salons and beauty parlors</p>
+        </div>
+    </section>
+
+    <main class="service-container">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Salons & Beauty Studios</h2>
+                <p>Transform your look with expert stylists and beauty professionals</p>
+            </div>
+
+            <div class="businesses-grid">
+                <!-- Salon 1 -->
+                <div class="business-item" onclick="bookNow('salon', 'Elite Salon')">
+                    <div class="business-img salon-1"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Elite Salon</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.7</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Fashion Avenue, Style District</p>
+                        <p class="description">Luxury salon offering haircuts, styling, coloring, and complete makeover services by certified stylists.</p>
+                        <div class="features">
+                            <span class="feature-tag">💇 Haircut & Styling</span>
+                            <span class="feature-tag">🎨 Hair Coloring</span>
+                            <span class="feature-tag">💄 Makeup</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$$ - Premium</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salon 2 -->
+                <div class="business-item" onclick="bookNow('salon', 'Glamour Hair Studio')">
+                    <div class="business-img salon-2"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Glamour Hair Studio</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.9</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Style District, Glamour Street</p>
+                        <p class="description">Award-winning salon specializing in bridal makeup, hair extensions, and keratin treatments.</p>
+                        <div class="features">
+                            <span class="feature-tag">👰 Bridal Makeup</span>
+                            <span class="feature-tag">💁 Hair Extensions</span>
+                            <span class="feature-tag">✨ Keratin Treatment</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$$ - Premium</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salon 3 -->
+                <div class="business-item" onclick="bookNow('salon', 'Prestige Beauty Lounge')">
+                    <div class="business-img salon-3"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Prestige Beauty Lounge</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">5.0</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Elegant Square, Beauty Boulevard</p>
+                        <p class="description">High-end beauty lounge offering complete beauty services including facials, waxing, and nail art.</p>
+                        <div class="features">
+                            <span class="feature-tag">✨ Facials</span>
+                            <span class="feature-tag">💅 Nail Art</span>
+                            <span class="feature-tag">👁️ Threading</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$$$ - Luxury</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salon 4 -->
+                <div class="business-item" onclick="bookNow('salon', 'Trendy Cuts & Colors')">
+                    <div class="business-img salon-4"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Trendy Cuts & Colors</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.6</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Modern Street, Hip Quarter</p>
+                        <p class="description">Contemporary salon for modern hairstyles, trendy colors, and creative styling for all ages.</p>
+                        <div class="features">
+                            <span class="feature-tag">🌈 Balayage</span>
+                            <span class="feature-tag">✂️ Modern Cuts</span>
+                            <span class="feature-tag">🎨 Color Specialist</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$ - Moderate</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salon 5 -->
+                <div class="business-item" onclick="bookNow('salon', 'Luxury Hair Boutique')">
+                    <div class="business-img salon-5"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Luxury Hair Boutique</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.8</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Designer Lane, Uptown</p>
+                        <p class="description">Boutique salon offering personalized hair care, scalp treatments, and premium product lines.</p>
+                        <div class="features">
+                            <span class="feature-tag">💆 Scalp Treatment</span>
+                            <span class="feature-tag">🌟 Hair Spa</span>
+                            <span class="feature-tag">💇‍♂️ Men's Grooming</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$$$ - Premium</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salon 6 -->
+                <div class="business-item" onclick="bookNow('salon', 'Quick Cuts Express')">
+                    <div class="business-img salon-6"></div>
+                    <div class="business-content">
+                        <div class="business-header">
+                            <h3>Quick Cuts Express</h3>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.5</span>
+                            </div>
+                        </div>
+                        <p class="location">📍 Downtown, Business District</p>
+                        <p class="description">Fast and professional haircut service for busy professionals. Walk-ins welcome!</p>
+                        <div class="features">
+                            <span class="feature-tag">⚡ Quick Service</span>
+                            <span class="feature-tag">👔 Professional</span>
+                            <span class="feature-tag">🚶 Walk-ins OK</span>
+                        </div>
+                        <div class="business-footer">
+                            <div class="price-range">$ - Budget Friendly</div>
+                            <button class="book-btn">Book Now →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 BookEasy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function bookNow(serviceType, businessName) {
+            window.location.href = `booking.html?service=${serviceType}&business=${encodeURIComponent(businessName)}`;
+        }
+    </script>
+</body>
+</html>
