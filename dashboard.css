@@ -1,0 +1,255 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #faf8f6;
+  color: #333;
+  padding: 0 30px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #805a47;
+}
+
+.user-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.logout {
+  text-decoration: none;
+  color: #805a47;
+  font-weight: 500;
+}
+
+/* Dashboard Headings */
+.dashboard {
+  padding: 40px 0;
+}
+
+.dashboard h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 35px;
+}
+
+/* Stats Cards */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.card {
+  flex: 1;
+  min-width: 180px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.card .icon {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.card p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-top: 5px;
+}
+
+.icon.success { color: #2ecc71; }
+.icon.warning { color: #f1c40f; }
+.icon.danger  { color: #e74c3c; }
+
+/* Filters Section */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 220px;
+}
+
+.status-filter {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.export-btn {
+  margin-left: auto;
+  background: #805a47;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.export-btn:hover {
+  background: #9b7158;
+}
+
+/* Bookings Table */
+.bookings {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.bookings h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-weight: 600;
+  color: #666;
+  padding-bottom: 10px;
+}
+
+td {
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  vertical-align: middle;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.customer-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.avatar {
+  font-size: 1.8rem;
+  background: #f3edea;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badge.pending {
+  background: #fff5cc;
+  color: #b58900;
+}
+
+.badge.confirmed {
+  background: #d4f8d4;
+  color: #2e8b57;
+}
+
+.badge.cancelled {
+  background: #f8d7da;
+  color: #b02a37;
+}
+
+/* Action Buttons */
+.confirm, .cancel {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.confirm {
+  background: #2ecc71;
+}
+
+.cancel {
+  background: #e74c3c;
+  margin-left: 8px;
+}
+
+.confirm:hover { background: #28b463; }
+.cancel:hover { background: #c0392b; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .export-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+}

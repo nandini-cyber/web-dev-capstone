@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookEasy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png.png">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">BookEasy</div>
+            <button class="business-login"><a href="business-login.html">🔒 Business Login</a></button>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Book Your Perfect <span class="highlight">Experience</span></h1>
+            <p>Discover and book reservations at the best restaurants, spas, gyms, and salons in your area</p>
+            <form class="search-form">
+                <input type="text" placeholder="Search for restaurants, spas, gyms, salons..." aria-label="Search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+ 
+    <section class="choose-service">
+        <h2>Choose Your Service</h2>
+        <p>Discover amazing experiences near you</p>
+        <div class="service-cards">
+            <a href="client/restaurants.html" class="service-card restaurant">
+                <div class="overlay"></div>
+                <div class="icon">🍽️</div>
+                <h3>Restaurants</h3>
+                <p>Book tables at top restaurants</p>
+                <span class="explore-link">Explore <span>&rarr;</span></span>
+            </a>
+            <a href="spas.html" class="service-card spa">
+                <div class="overlay"></div>
+                <div class="icon">✨</div>
+                <h3>Spas</h3>
+                <p>Relax with premium spa services</p>
+                <span class="explore-link">Explore <span>&rarr;</span></span>
+            </a>
+            <a href="/client/gyms.html" class="service-card gym">
+                <div class="overlay"></div>
+                <div class="icon">🏋️</div>
+                <h3>Gyms</h3>
+                <p>Train with professional guidance</p>
+                <span class="explore-link">Explore <span>&rarr;</span></span>
+            </a>
+            <a href="salons.html" class="service-card salon">
+                <div class="overlay"></div>
+                <div class="icon">✂️</div>
+                <h3>Salons</h3>
+                <p>Style yourself at top salons</p>
+                <span class="explore-link">Explore <span>&rarr;</span></span>
+            </a>
+        </div>
+        <div class="service-filters">
+            <button class="filter active">All Services</button>
+            <button class="filter">🍽️ Restaurants</button>
+            <button class="filter">✨ Spas</button>
+            <button class="filter">🏋️ Gyms</button>
+            <button class="filter">✂️ Salons</button>
+        </div>
+    </section>
+
+    <section class="featured-businesses">
+        <h2>Featured Businesses</h2>
+        <div class="business-cards">
+            <div class="business-card">
+                <div class="business-image business-restaurant"></div>
+                <div class="business-rating"><span>⭐</span> 4.8</div>
+                <h3>The Gourmet Kitchen</h3>
+                <div class="business-location">Downtown Plaza</div>
+                <div class="business-tags">
+                    <span>Dinner</span>
+                    <span>Lunch</span>
+                    <span>+2 more</span>
+                </div>
+                <button class="book-now" onclick="window.location.href='client/booking.html?service=restaurant&business=The Gourmet Kitchen'">&#128197; Book Now</button>
+            </div>
+            <div class="business-card">
+                <div class="business-image business-spa"></div>
+                <div class="business-rating"><span>⭐</span> 4.9</div>
+                <h3>Zen Spa Retreat</h3>
+                <div class="business-location">Wellness District</div>
+                <div class="business-tags">
+                    <span>Deep Tissue Massage</span>
+                    <span>Swedish Massage</span>
+                    <span>+2 more</span>
+                </div>
+                <button class="book-now" onclick="window.location.href='client/booking.html?service=spa&business=Zen Spa Retreat'">&#128197; Book Now</button>
+            </div>
+            <div class="business-card">
+                <div class="business-image business-gym"></div>
+                <div class="business-rating"><span>⭐</span> 4.6</div>
+                <h3>PowerFit Gym</h3>
+                <div class="business-location">Sports Complex</div>
+                <div class="business-tags">
+                    <span>Personal Training</span>
+                    <span>Group Classes</span>
+                    <span>+2 more</span>
+                </div>
+                <button class="book-now" onclick="window.location.href='client/booking.html?service=gym&business=PowerFit Gym'">&#128197; Book Now</button>
+            </div>
+            <div class="business-card">
+                <div class="business-image business-salon"></div>
+                <div class="business-rating"><span>⭐</span> 4.7</div>
+                <h3>Elite Salon</h3>
+                <div class="business-location">Fashion Avenue</div>
+                <div class="business-tags">
+                    <span>Haircut & Styling</span>
+                    <span>Hair Coloring</span>
+                    <span>+2 more</span>
+                </div>
+                <button class="book-now" onclick="window.location.href='client/booking.html?service=salon&business=Elite Salon'">&#128197; Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="trusted">
+        <div class="trusted-overlay">
+            <div class="trusted-stats">
+                <div class="stat">
+                    <div class="stat-value">50K+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">1,200+</div>
+                    <div class="stat-label">Partner Businesses</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">98%</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+            </div>
+        </section>
+    
+
+</body>
+</html>

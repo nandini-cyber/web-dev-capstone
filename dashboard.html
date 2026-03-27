@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Dashboard | BookEasy</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <link rel="icon" type="image/png" href="favicon.png.png">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">BookEasy</div>
+    <div class="user-info">
+      <span>Welcome, Zen Spa Retreat</span>
+      <a href="index.html" class="logout">↪ Logout</a>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <h1>Business Dashboard</h1>
+    <p class="subtitle">Welcome back to Zen Spa Retreat</p>
+
+    <section class="stats">
+      <div class="card">
+        <div class="icon">📅</div>
+        <h3>Total Bookings</h3>
+        <p>1</p>
+      </div>
+      <div class="card">
+        <div class="icon success">✔️</div>
+        <h3>Confirmed</h3>
+        <p>0</p>
+      </div>
+      <div class="card">
+        <div class="icon warning">⚠️</div>
+        <h3>Pending</h3>
+        <p>1</p>
+      </div>
+      <div class="card">
+        <div class="icon danger">❌</div>
+        <h3>Cancelled</h3>
+        <p>0</p>
+      </div>
+    </section>
+
+    <section class="filters">
+      <div class="search-box">
+        <input type="text" placeholder="🔍 Search customers..." />
+      </div>
+      <select class="status-filter">
+        <option>All Status</option>
+        <option>Confirmed</option>
+        <option>Pending</option>
+        <option>Cancelled</option>
+      </select>
+      <button class="export-btn">📤 Export</button>
+    </section>
+
+    <section class="bookings">
+      <h2>Recent Bookings</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Service</th>
+            <th>Date & Time</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="customer-info">
+              <div class="avatar">👤</div>
+              <div>
+                <strong>Jane Smith</strong><br />
+                <span>jane@example.com</span><br />
+                <small>+1 234 567 8901</small>
+              </div>
+            </td>
+            <td>Deep Tissue Massage</td>
+            <td>
+              📅 1/16/2025<br />
+              🕒 14:00
+            </td>
+            <td><span class="badge pending">Pending</span></td>
+            <td>
+              <button class="confirm">Confirm</button>
+              <button class="cancel">Cancel</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
